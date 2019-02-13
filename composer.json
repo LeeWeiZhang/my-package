@@ -1,0 +1,31 @@
+{
+    "name": "weizhang/my-package",
+    "description": "My package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wz",
+            "email": "leeweizhang24@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WeiZhang\\MyPackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WeiZhang\\MyPackage\\Tests\\": "tests/"
+        },
+        "classmap": [
+            "tests"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always"
+    }
+}
