@@ -1,0 +1,3 @@
+# MyPackage 
+
+Sample PHP package
